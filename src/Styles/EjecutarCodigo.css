@@ -1,0 +1,41 @@
+
+
+body,
+html {
+    height: 100%;
+    /* Hace que el cuerpo y el documento ocupen toda la altura de la página */
+    margin: 0;
+    padding: 0;
+}
+.descripcion{
+    align-content: center;
+    background: #ccc;
+}
+.columna-central {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    /* Toma el 100% de la altura de la página */
+}
+
+.contenedor-sombreado {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.codigo-responsivo {
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Media query para ajustar el ancho del código en pantallas más pequeñas (ejemplo: tabletas y móviles) */
+@media (max-width: 768px) {
+    .codigo-responsivo {
+        width: 100%;
+    }
+}
